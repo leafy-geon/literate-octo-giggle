@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mi amore~</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffe6f0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .image-frame {
+      border: 8px solid #ff99cc;
+      border-radius: 50%;
+      padding: 8px;
+      background-color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-frame img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .audio-wrapper {
+      margin-top: 25px;
+      overflow: hidden;
+      transition: width 0.4s ease;
+    }
+
+    .audio-container {
+      width: 40px;
+      transition: width 0.4s ease;
+    }
+
+    .audio-wrapper:hover .audio-container {
+      width: 300px;
+    }
+
+    audio {
+      width: 100%;
+      height: 35px;
+      cursor: pointer;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #ffccdd;
+    }
+
+    audio::-webkit-media-controls-play-button {
+      background-color: #ff99cc;
+      border-radius: 50%;
+    }
+
+    audio::-webkit-media-controls-play-button:hover {
+      background-color: #ff66b2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-frame">
+    <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/526635586_1265082395408932_2614257727046043022_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGStN6G0luOcP3GiFVailS4HnAg06hzt_cecCDTqHO397ijlPTmSL_jRsYdaqBCmOpZr7z07nliMr9nbdYpvCyi&_nc_ohc=cnBjwY1X7IoQ7kNvwGmeFKD&_nc_oc=AdnyOQb3VAzTte3Bhy5-2CWOlPEUdRX2p4z8YOYDB1t1cUrLyRAuTf_uNuzl-nBZT3o&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=KctA8vHPkvAHPx_kvtj65w&oh=00_AfTNuWyufeD0ozbjoM8uzRNrIXgh6OVt8huWoxods126ew&oe=6893CFE9" alt="Cute Image">
+  </div>
+
+  <div class="audio-wrapper">
+    <div class="audio-container">
+      <audio controls>
+        <source src="yung kai - blue (Lyrics) [4adZ7AguVcw].mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+</body>
+</html>
